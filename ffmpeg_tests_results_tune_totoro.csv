@@ -1,0 +1,11 @@
+tune,preset,psnr,ssim,file_size,output_file
+film,ultrafast,0.999191 (30.919718) V,40.716410 u,11280,encoded_videos_tune/output_film_ultrafast.mp4
+film,medium,0.999395 (32.183319) V,40.682986 u,6152,encoded_videos_tune/output_film_medium.mp4
+film,slow,0.999374 (32.032532) V,40.796758 u,6196,encoded_videos_tune/output_film_slow.mp4
+animation,ultrafast,0.999297 (31.528941) V,40.593155 u,9960,encoded_videos_tune/output_animation_ultrafast.mp4
+animation,medium,0.999414 (32.322416) V,41.114944 u,6220,encoded_videos_tune/output_animation_medium.mp4
+animation,slow,0.999385 (32.107781) V,41.204790 u,7172,encoded_videos_tune/output_animation_slow.mp4
+grain,ultrafast,0.999285 (31.457406) V,43.812082 u,15928,encoded_videos_tune/output_grain_ultrafast.mp4
+grain,medium,0.999476 (32.807434) V,43.194019 u,8552,encoded_videos_tune/output_grain_medium.mp4
+grain,slow,0.999483 (32.867315) V,43.201110 u,8516,encoded_videos_tune/output_grain_slow.mp4
+
