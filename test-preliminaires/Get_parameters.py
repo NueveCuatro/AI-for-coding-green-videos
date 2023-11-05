@@ -5,7 +5,7 @@ def get_video_encoding_parameters(video_path):
     try:
         # Utilisez la commande ffprobe pour obtenir des informations sur la vidéo
         command = [
-            "ffprobe", "-v", "error", "-of", "json", "-show_streams", "-show_format", video_path
+            "ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height,codec_name", "-of", "json", video_path
         ]
 
         # Exécutez la commande ffprobe et capturez la sortie
