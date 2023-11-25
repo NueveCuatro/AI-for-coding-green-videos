@@ -2,3 +2,5 @@
 *hevc
 *HEVC
 /venv_pfe_ffmpeg
+/json-client
+*.pptx
