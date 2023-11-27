@@ -5,7 +5,8 @@ def get_video_encoding_parameters(video_path):
     try:
         # Utilisez la commande ffprobe pour obtenir des informations sur la vidéo
         command = [
-            "ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height,codec_name", "-of", "json", video_path
+            "ffprobe", "-v", "error", "-select_streams", "v:0", "-show_entries", "stream=width,height,codec_name",
+              "-of", "json", video_path
         ]
 
         # Exécutez la commande ffprobe et capturez la sortie
@@ -21,7 +22,7 @@ def get_video_encoding_parameters(video_path):
         return str(e)
 
 if __name__ == "__main__":
-    video_path = "totoro_vf.mp4"
+    video_path = "../totoro_vf.mp4"
     encoding_parameters = get_video_encoding_parameters(video_path)
     if encoding_parameters:
         print("Paramètres de codage vidéo :")
