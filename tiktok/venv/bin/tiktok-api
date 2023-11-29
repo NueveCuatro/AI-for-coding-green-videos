@@ -1,0 +1,12 @@
+#!/Users/zough/Documents/VAP/PFE/AI-for-coding-green-videos/tiktok/venv/bin/python3
+# EASY-INSTALL-ENTRY-SCRIPT: 'tiktok-api==0.10.5','console_scripts','tiktok-api'
+__requires__ = 'tiktok-api==0.10.5'
+import re
+import sys
+from pkg_resources import load_entry_point
+
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw?|\.exe)?$', '', sys.argv[0])
+    sys.exit(
+        load_entry_point('tiktok-api==0.10.5', 'console_scripts', 'tiktok-api')()
+    )
