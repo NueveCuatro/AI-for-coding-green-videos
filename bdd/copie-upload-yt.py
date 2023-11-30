@@ -149,7 +149,10 @@ def upload_videos_from_csv(client_secrets_file, uploaded_videos):
 
         if not initialize_upload(youtube, args):
             print("Quota limit reached. Changing account.")
-            return False  # Indiquez qu'il faut changer de compte
+            youtube = get_authenticated_service(client_secrets_file)
+            initialize_upload(youtube, args)
+            continue
+        
         uploaded_videos[video_id] = args['title']
         os.remove(video_file_path)  # Supprimer la vidéo téléchargée après l'upload
 
