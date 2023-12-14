@@ -1,4 +1,0 @@
-
-vimizer/0 12 0
-youtube/0 12 1
-tiktok/0 12 2
