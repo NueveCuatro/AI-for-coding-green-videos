@@ -1,4 +1,5 @@
 *.mp4
 *hevc
 *HEVC
-/venv_pfe_ffmpeg
+*.png
+/venv*
