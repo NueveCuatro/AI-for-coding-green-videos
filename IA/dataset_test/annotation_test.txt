@@ -1,0 +1,6 @@
+vimizer/9 1 9 0
+vimizer/10 1 20 0
+youtube/9 1 4 1
+youtube/10 1 7 1
+tiktok/9 1 3 2
+tiktok/10 1 6 2
