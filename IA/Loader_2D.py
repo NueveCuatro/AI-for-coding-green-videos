@@ -16,7 +16,12 @@ class CustomImageDataset(Dataset):
         return len(self.img_labels)
 
     def __getitem__(self, idx):
-        img_path = self.img_dir + '/' + str(idx) +'.png'
+        # Ici nos indices de lignes étaient confondus avec notre nom d'image
+        # Ce n'est plus le cas dans la version binaire ce qui impose la modification suivante :
+        #img_path = self.img_dir + '/' + str(idx) +'.png'
+        # print(idx)
+        img_path = self.img_dir + '/' + str(self.img_labels.iloc[idx,0]) +'.png'
+        # print(img_path)
         image = read_image(img_path)
         label = self.img_labels.iloc[idx, 1]
         if self.transform:
