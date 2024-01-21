@@ -1,0 +1,5 @@
+dataset_video/*
+*.mp4
+*.yuv
+*.npy
+*.264
