@@ -1,1 +1,1 @@
-#### TEST
+All the files notebooks we used to train our models are in the /bon_fichiers folder
